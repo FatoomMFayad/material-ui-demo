@@ -45,7 +45,7 @@ const App = () => {
                     <Grid container spacing={4}>
                         <Grid item>
                             <Card className={classes.card}>
-                                <CardMedia className={classes.CardMedia} image="https://source.unspalsh.com/random" title="Image title" />
+                                <CardMedia className={classes.cardMedia} image="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" title="Image title" />
                                 <CardContent className={classes.cardContent}>
                                     <Typography gutterBottom variant="h5">
                                         Heading
