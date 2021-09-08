@@ -3,6 +3,7 @@ import { Typography, AppBar, Button, Card, CardActions, CardContent, CardMedia, 
 import { PhotoCamera } from "@material-ui/icons";
 import useStyles from './styles';
 
+const cards =  [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const App = () => {
     const classes = useStyles();
     return (
@@ -43,7 +44,8 @@ const App = () => {
                 </div>
                 <Container className={classes.cardGrid} maxWidth="md">
                     <Grid container spacing={4}>
-                        <Grid item>
+                        {cards.map(() => (
+                            <Grid item>
                             <Card className={classes.card}>
                                 <CardMedia className={classes.cardMedia} image="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" title="Image title" />
                                 <CardContent className={classes.cardContent}>
@@ -60,6 +62,7 @@ const App = () => {
                                 </CardActions>
                             </Card>
                         </Grid>
+                        ))}                        
                     </Grid>
                 </Container>
             </main>
